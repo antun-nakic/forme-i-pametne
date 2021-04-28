@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FormeIntro from "./components/FormeInto";
+import { FormeAdvanced as Sime } from "./components/FormeAdvanced";
+import Pametna from "./components/Pametna";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Pametna naslov='Dobar Dan' />
+      <br />
+      <Sime />
+      <br />
+      <FormeIntro />
     </div>
   );
 }
